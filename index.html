@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Trackr</title>
+        <link rel = "stylesheet" href = "styles.css">   
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Trackr</h1>
+
+            <!--Task-Form-->
+        </div class = "form=container">
+            <h2 id = "form-title">Add New Task</h2>
+            <form id = "task-form">
+                <input type = "hidden" id = "task-id">
+                <div class = "form-group">
+                    <label for="task-name">Task Name</label>
+                    <input type = "text" id = "task-name" required>
+                </div>
+                <div class = "form-group">
+                    <label for = "task-description">Description</label>
+                    <textarea id = "task-description" rows = "3"></textarea>
+                </div>
+                <div class = "form-group">
+                    <label for = "task-status">Description</label>
+                    <select id = "task-status">
+                        <option value = "Pending">Pending</option>
+                        <option value = "Completed">Completed</option>
+                    </select>
+                </div>
+                <div class = "button-group">
+                    <button type = "submit" id = "submit-btn">Add Task</button>
+                    <button type = "button" id = "cancel-btn" class = "hidden">Cancel</button>
+                </div>                
+            </form>
+        </div>
+        <!-- Task List -->
+        <div class="tasks-container">
+            <h2>Your Tasks</h2>
+            <div id="tasks-list">
+                <!-- Tasks will be added here dynamically -->
+                <div class="empty-state">No tasks yet. Add one above!</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>        
+    </body>
+</html>
