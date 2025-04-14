@@ -299,7 +299,7 @@ task-Trackr/
 
 ## Documentation Video
 
-![Video Demo](mayo-clinic-2025/videos/Screen Recording 2025-04-14 001108.mp4)
+https://github.com/user-attachments/assets/56316a0d-2a22-48f1-9cba-25f2b8ae8223
 
 ## API Documentation
 
