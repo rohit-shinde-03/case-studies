@@ -54,7 +54,7 @@ The application features several key UI components that enhance the user experie
 - Creates a consistent visual language throughout the app
 - Improves perceived performance with smooth transitions
 - Highlights interactive elements with hover effects
-- Adapts to different screen sizes with responsive design# Enhanced Task Tracker Application
+- Adapts to different screen sizes with responsive design# Enhanced Task Trackr Application
 
 A modern, full-stack task management application showcasing React (frontend) and Node.js/Express (backend) with clean architecture and intuitive UI/UX.
 
@@ -72,7 +72,7 @@ A modern, full-stack task management application showcasing React (frontend) and
 
 ## Project Overview
 
-This Task Tracker enables users to create, view, update, and delete tasks through a clean, responsive interface. Each task has a name, description, and status (Pending/Completed) with real-time feedback through toast notifications.
+This Task Trackr enables users to create, view, update, and delete tasks through a clean, responsive interface. Each task has a name, description, and status (Pending/Completed) with real-time feedback through toast notifications.
 
 ## Features
 
@@ -214,7 +214,7 @@ The application follows a client-server architecture:
 ## Project Structure
 
 ```
-task-tracker/
+task-Trackr/
 ├── backend/                 # Backend code
 │   ├── server.js            # Express server
 │   ├── package.json         # Backend dependencies
@@ -465,4 +465,4 @@ Errors are returned in a consistent format:
 
 ---
 
-This Task Tracker application demonstrates modern web development practices with a focus on clean architecture, intuitive user experience, and maintainable code structure.
+This Task Trackr application demonstrates modern web development practices with a focus on clean architecture, intuitive user experience, and maintainable code structure.
