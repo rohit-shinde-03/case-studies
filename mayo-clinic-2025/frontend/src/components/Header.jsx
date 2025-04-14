@@ -14,7 +14,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  title: 'Task Tracker'
+  title: 'Task Trackr'
 };
 
 export default Header;
