@@ -1,0 +1,250 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Component */
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-container h2, .tasks-container h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .submit-btn {
+    background-color: #3498db;
+    color: white;
+    flex: 1;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .edit-btn {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Task List Styles */
+  .tasks-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Task Item Styles */
+  .task-item {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.2s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item.completed {
+    border-left-color: #2ecc71;
+    opacity: 0.8;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .task-description {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .task-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .status-pending {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .status-completed {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .task-actions button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* State Styles */
+  .empty-state, .loading-state, .error-state {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+  }
+  
+  .error-state {
+    color: #e74c3c;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .task-item {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .task-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .task-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
